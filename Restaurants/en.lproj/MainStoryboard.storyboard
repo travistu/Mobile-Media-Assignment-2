@@ -81,11 +81,25 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="cuisine" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="10" id="PbC-R4-mhe">
+                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="cuisine type" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="10" id="PbC-R4-mhe">
                                 <rect key="frame" x="20" y="13" width="280" height="33"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" size="system"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="phonenumber" lineBreakMode="tailTruncation" minimumFontSize="10" id="WU6-sP-ldy">
+                                <rect key="frame" x="20" y="147" width="107" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="review" lineBreakMode="tailTruncation" minimumFontSize="10" id="xNp-ly-5oz">
+                                <rect key="frame" x="20" y="197" width="50" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -97,6 +111,8 @@
                         <outlet property="addressLabel" destination="27" id="dDR-xF-TZ5"/>
                         <outlet property="cuisineLabel" destination="PbC-R4-mhe" id="gWD-Kf-lAK"/>
                         <outlet property="navigationHeader" destination="26" id="KJk-AP-LeQ"/>
+                        <outlet property="phonenumber" destination="WU6-sP-ldy" id="OWD-SO-6mD"/>
+                        <outlet property="review" destination="xNp-ly-5oz" id="CAG-Lg-6kq"/>
                     </connections>
                 </viewController>
             </objects>
@@ -109,8 +125,9 @@
             <relationships>
                 <relationship kind="outlet" name="addressLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="cuisineLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="cuisineType" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="navigationHeader" candidateClass="UINavigationItem"/>
+                <relationship kind="outlet" name="phonenumber" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="review" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="MasterViewController" superclassName="UITableViewController">
